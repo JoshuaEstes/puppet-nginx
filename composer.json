@@ -1,0 +1,20 @@
+{
+    "name": "joshuaestes/puppet-nginx",
+    "type": "puppet-module",
+    "license": "MIT",
+    "description": "Puppet module to manage nginx",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://github.com/JoshuaEstes/ComposerInstallerPuppet.git"
+        }
+    ],
+    "require": {
+        "joshuaestes/composer-installer-puppet": "*"
+    },
+    "extra": {
+        "puppet": {
+            "module_name": "nginx"
+        }
+    }
+}
