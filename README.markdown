@@ -2,10 +2,6 @@
 
 # Install using composer
 
-This module can be installed using composer. You will need to define the
-repository and require this module. For more information on using composer
-to install puppet modules see [github.com/JoshuaEstes/ComposerInstallerPuppet](https://github.com/JoshuaEstes/ComposerInstallerPuppet).
-
     ...
     "repositories": [
         ...
@@ -20,13 +16,15 @@ to install puppet modules see [github.com/JoshuaEstes/ComposerInstallerPuppet](h
     },
     "extra": {
         ...
-        "puppet": {
-            "modules_path": "app/Resources/puppet/modules"
+        "installer-paths": {
+            "app/Resources/puppet/modules/{$name}/": ["type:puppet-module"]
         }
     },
     ...
 
 # Basic Usage
+
+Place this in your manifest.
 
     class { 'nginx': }
     nginx::server { 'symfony':
@@ -36,7 +34,7 @@ to install puppet modules see [github.com/JoshuaEstes/ComposerInstallerPuppet](h
 
 # License
 
-Copyright (C) 2013 Joshua Estes
+Copyright (C) 2013-2014 Joshua Estes
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
