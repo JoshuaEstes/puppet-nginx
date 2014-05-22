@@ -29,6 +29,10 @@ to install puppet modules see [github.com/JoshuaEstes/ComposerInstallerPuppet](h
 # Basic Usage
 
     class { 'nginx': }
+    nginx::server { 'symfony':
+        root     => '/var/www/symfony/web',
+        template => 'nginx/symfony2.erb',
+    }
 
 # License
 
