@@ -6,15 +6,13 @@
     "repositories": [
         {
             "type": "git",
-            "url": "git://github.com/JoshuaEstes/ComposerInstallerPuppet.git"
+            "url": "git://github.com/JoshuaEstes/installers.git"
         }
     ],
     "require": {
-        "joshuaestes/composer-installer-puppet": "*"
+        "composer/installers": "~1.0"
     },
     "extra": {
-        "puppet": {
-            "module_name": "nginx"
-        }
+        "installer-name": "nginx"
     }
 }
