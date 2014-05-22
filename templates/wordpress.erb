@@ -11,6 +11,8 @@ server {
     error_log /var/log/nginx/<%= @server_name %>.error.log;
     access_log /var/log/nginx/<%= @server_name %>.access.log;
 
+    index index.php;
+
     # Global restrictions configuration file.
     # Designed to be included in any server {} block.
     location = /favicon.ico {
