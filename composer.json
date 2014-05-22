@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "composer/installers": "~1.0"
+        "composer/installers": "dev-puppet-module"
     },
     "extra": {
         "installer-name": "nginx"
