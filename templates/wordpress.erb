@@ -37,9 +37,6 @@ server {
         deny all;
     }
 
-    # Only include one of the files below.
-    include global/wordpress.conf;
-
     # This order might seem weird - this is attempted to match last if rules below fail.
     # http://wiki.nginx.org/HttpCoreModule
     location / {
