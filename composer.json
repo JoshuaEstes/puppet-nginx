@@ -3,12 +3,6 @@
     "type": "puppet-module",
     "license": "MIT",
     "description": "Puppet module to manage nginx",
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git://github.com/JoshuaEstes/installers.git"
-        }
-    ],
     "require": {
         "composer/installers": "~1.0"
     },
