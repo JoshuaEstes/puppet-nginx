@@ -11,6 +11,10 @@ server {
     error_log /var/log/nginx/<%= @server_name %>.error.log;
     access_log /var/log/nginx/<%= @server_name %>.access.log;
 
+    location ^~ /wp-content {
+        alias <%= @root %>/../wp-content;
+    }
+
     index index.php;
 
     # Global restrictions configuration file.
