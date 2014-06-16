@@ -57,26 +57,6 @@ server {
       log_not_found off;
   }
 
-# Change Vanilla's undesirable behavior & force it to display things like a traditional forum
-  location = /discussions {
-      rewrite ^ $scheme://your.forum.com/ permanent;
-  }
-  location = /discussions/ {
-      rewrite ^ $scheme://your.forum.com/ permanent;
-  }
-  location = /categories/discussions {
-      rewrite ^ $scheme://your.forum.com/ permanent;
-  }
-  location = /categories/discussions/ {
-      rewrite ^ $scheme://your.forum.com/ permanent;
-  }
-  location /vanilla/discussions {
-      rewrite ^ $scheme://your.forum.com/ permanent;
-  }
-  location /vanilla/discussions/ {
-      rewrite ^ $scheme://your.forum.com/ permanent;
-  }
-  
 # Plug-in specific rules
 #
 # Keep the WhosOnline plugin from flooding the logs
